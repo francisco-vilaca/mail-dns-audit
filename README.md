@@ -43,10 +43,20 @@ It is **read-only**: it only makes DNS queries (plus one HTTPS GET with `--fetch
 
 Requires Python 3.9+ and [dnspython](https://www.dnspython.org/).
 
+Install it as a command with [pipx](https://pipx.pypa.io/):
+
+```bash
+pipx install git+https://github.com/francisco-vilaca/mail-dns-audit.git
+mail-dns-audit example.com
+```
+
+Or run it straight from a clone:
+
 ```bash
 git clone https://github.com/francisco-vilaca/mail-dns-audit.git
 cd mail-dns-audit
 pip install -r requirements.txt
+./mail_dns_audit.py example.com
 ```
 
 ## Usage

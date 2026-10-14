@@ -13,3 +13,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -r requirements.txt pytest
       - run: python -m pytest -q
+      - name: Install as a package and run the CLI
+        run: pip install . && mail-dns-audit --version

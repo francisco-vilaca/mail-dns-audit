@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mail-dns-audit"
+version = "0.1.0"
+description = "Audit MX, SPF, DKIM, DMARC, MTA-STS and TLS-RPT records for any domain"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Francisco Vilaça"}]
+requires-python = ">=3.9"
+dependencies = ["dnspython>=2.4"]
+keywords = ["email", "dns", "spf", "dkim", "dmarc", "deliverability"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Communications :: Email",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://github.com/francisco-vilaca/mail-dns-audit"
+
+[project.scripts]
+mail-dns-audit = "mail_dns_audit:main"
+
+[tool.setuptools]
+py-modules = ["mail_dns_audit"]
