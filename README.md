@@ -1,5 +1,7 @@
 # mail-dns-audit
 
+[![tests](https://github.com/francisco-vilaca/mail-dns-audit/actions/workflows/tests.yml/badge.svg)](https://github.com/francisco-vilaca/mail-dns-audit/actions/workflows/tests.yml) ![license](https://img.shields.io/badge/license-MIT-blue)
+
 Audit the DNS records that decide whether a domain's email lands in the inbox, in the spam folder, or nowhere.
 
 One command checks **MX, SPF, DKIM, DMARC, MTA-STS, TLS-RPT and BIMI** and tells you what is wrong in plain language, with a non-zero exit code when something is broken, so it also works in scripts and monitoring.
